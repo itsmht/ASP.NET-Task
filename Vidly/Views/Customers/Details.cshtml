@@ -1,0 +1,13 @@
+﻿@model Vidly.Models.Customer
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customer Details</h2>
+
+<h3>Name : @Model.Name</h3>
+<h3>Membership Type: @Model.MembershipType.Name</h3>
+<h3>Discount Rate: @Model.MembershipType.DiscountRate</h3>
+<h3>Duration In Months: @Model.MembershipType.DurationInMonths</h3>
+<h3>SignUP Fee: @Model.MembershipType.SignUpFee</h3>
